@@ -5,3 +5,4 @@ payload:
   - DOMAIN-SUFFIX,com.xiaomi.smarthome
   - DOMAIN-SUFFIX,msftconnecttest.com
   - DOMAIN-SUFFIX,msftncsi.com
+  - DOMAIN,www.gstatic.com
