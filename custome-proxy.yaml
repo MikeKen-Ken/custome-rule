@@ -1,4 +1,1 @@
 payload:
-  - PROCESS-NAME,NVIDIA Overlay.exe
-  - PROCESS-NAME,NVIDIA App.exe
-  - PROCESS-NAME,nvcontainer.exe
