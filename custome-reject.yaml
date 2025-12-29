@@ -1,4 +1,4 @@
 payload:
   - PROCESS-NAME,FontCreator.exe
   - PROCESS-NAME,AdobeGcClient.exe
-  - DOMAIN-SUFFIX,video-fa.scdn.co
+  - DOMAIN-SUFFIX,video-fa.scdn.co    # Spotify video
