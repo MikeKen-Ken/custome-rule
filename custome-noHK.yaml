@@ -11,3 +11,4 @@ payload:
   - PROCESS-NAME,Unity Hub.exe
   - PROCESS-NAME,Unity.exe
   - PROCESS-NAME,Unity.Licensing.Client.exe
+  - PROCESS-NAME,com.openai.chatgpt
