@@ -7,4 +7,5 @@ payload:
   - DOMAIN-SUFFIX,msftncsi.com
   - PROCESS-NAME,com.jingdong.app.mall
   - PROCESS-NAME,com.taobao.taobao
+  - PROCESS-NAME,com.xiaomi.smarthome
 
