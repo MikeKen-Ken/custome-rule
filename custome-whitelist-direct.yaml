@@ -8,5 +8,5 @@ payload:
   - PROCESS-NAME,com.jingdong.app.mall
   - PROCESS-NAME,com.taobao.taobao
   - PROCESS-NAME,com.xiaomi.smarthome
-  - com.bytedance.android.doubaoime
+  - PROCESS-NAME,com.bytedance.android.doubaoime
 
