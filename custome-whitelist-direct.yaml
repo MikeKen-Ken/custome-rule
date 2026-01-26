@@ -5,6 +5,4 @@ payload:
   - DOMAIN-SUFFIX,com.xiaomi.smarthome
   - DOMAIN-SUFFIX,msftconnecttest.com
   - DOMAIN-SUFFIX,msftncsi.com
-  - DOMAIN-SUFFIX,speech.platform.bing.com
   - PROCESS-NAME,com.xiaomi.smarthome 
-  - PROCESS-NAME,TextInputHost.exe
