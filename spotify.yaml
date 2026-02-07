@@ -1,0 +1,19 @@
+payload:
+  # Spotify 核心服务
+  - DOMAIN-SUFFIX,spotify.com
+  - DOMAIN-SUFFIX,login5.spotify.com
+  - DOMAIN-SUFFIX,spclient.wg.spotify.com
+  - DOMAIN-SUFFIX,api.spotify.com
+  - DOMAIN-SUFFIX,api-partner.spotify.com
+  - DOMAIN-SUFFIX,partners.wg.spotify.com
+  - DOMAIN-SUFFIX,gew4-spclient.spotify.com
+
+  # Spotify 音频 / 资源 CDN
+  - DOMAIN-SUFFIX,scdn.co
+  - DOMAIN-SUFFIX,spotifycdn.com
+  - DOMAIN-SUFFIX,pickasso.spotifycdn.com
+  - DOMAIN-SUFFIX,mosaicscdn.co
+
+  # 其他依赖 CDN
+  - DOMAIN-SUFFIX,steamstatic.com
+  - DOMAIN-SUFFIX,smoot.apple.com
