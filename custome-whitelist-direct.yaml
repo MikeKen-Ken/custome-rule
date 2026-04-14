@@ -6,4 +6,5 @@ payload:
   - DOMAIN-SUFFIX,msftconnecttest.com
   - DOMAIN-SUFFIX,msftncsi.com
   - DOMAIN-SUFFIX,mikeken.online
-  - PROCESS-NAME,com.xiaomi.smarthome 
+  - DOMAIN-SUFFIX,hnhxzkj.com
+  - PROCESS-NAME,com.xiaomi.smarthome  
