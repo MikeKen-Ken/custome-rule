@@ -3,4 +3,5 @@ payload:
   - DOMAIN-SUFFIX,battlenet.com.cn
   - DOMAIN-SUFFIX,blzstatic.cn
   - DOMAIN-SUFFIX,sign.v2gx.com
-  - DOMAIN-SUFFIX,yizhongyun.com
+  - DOMAIN-SUFFIX,yizhongyun.com 
+  - DOMAIN-SUFFIX,plugin.eagle.cool
