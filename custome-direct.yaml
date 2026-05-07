@@ -22,5 +22,5 @@ payload:
   - PROCESS-NAME-WILDCARD,*autonavi.minimap*
   - PROCESS-NAME-WILDCARD,*yonghui.hyd*
   - PROCESS-NAME-WILDCARD,*android.todesk*
-
+  - PROCESS-NAME-WILDCARD,*hikvision.owner*
 
