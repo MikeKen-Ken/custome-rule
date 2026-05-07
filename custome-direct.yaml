@@ -10,3 +10,4 @@ payload:
   - PROCESS-NAME-WILDCARD,*tencent*
   - PROCESS-NAME-WILDCARD,*WeChat*
   - PROCESS-NAME-WILDCARD,*BaiduNetdisk*
+  - PROCESS-NAME-WILDCARD,*jingdong.app*
