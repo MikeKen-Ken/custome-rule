@@ -19,5 +19,6 @@ payload:
   - PROCESS-NAME-WILDCARD,*alipaygphone*
   - PROCESS-NAME-WILDCARD,*sankuai.meituan*
   - PROCESS-NAME-WILDCARD,*toyota.ftmsapp*
+  - PROCESS-NAME-WILDCARD,*autonavi.minimap*
 
 
