@@ -18,5 +18,6 @@ payload:
   - PROCESS-NAME-WILDCARD,*com.unionpay*
   - PROCESS-NAME-WILDCARD,*alipaygphone*
   - PROCESS-NAME-WILDCARD,*sankuai.meituan*
+  - PROCESS-NAME-WILDCARD,*toyota.ftmsapp*
 
 
