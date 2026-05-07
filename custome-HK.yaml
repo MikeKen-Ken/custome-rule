@@ -1,2 +1,2 @@
 payload:
-  - PROCESS-KEYWORD,Spotify
+  - PROCESS-NAME-WILDCARD,*Spotify*
