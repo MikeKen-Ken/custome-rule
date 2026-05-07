@@ -6,6 +6,8 @@ payload:
   - DOMAIN-SUFFIX,yizhongyun.com
   - DOMAIN-SUFFIX,eagle.cool
   - DOMAIN-SUFFIX,photokit.com
+  - DOMAIN-SUFFIX,.qq.com
+  
   - PROCESS-NAME-WILDCARD,*weixin*
   - PROCESS-NAME-WILDCARD,*tencent*
   - PROCESS-NAME-WILDCARD,*WeChat*
