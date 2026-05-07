@@ -11,3 +11,12 @@ payload:
   - PROCESS-NAME-WILDCARD,*WeChat*
   - PROCESS-NAME-WILDCARD,*BaiduNetdisk*
   - PROCESS-NAME-WILDCARD,*jingdong.app*
+  - PROCESS-NAME-WILDCARD,*taobao.taobao*
+  - PROCESS-NAME-WILDCARD,*xingin.xhs*
+  - PROCESS-NAME-WILDCARD,*niu.cloud*
+  - PROCESS-NAME-WILDCARD,*taobao.idlefish*
+  - PROCESS-NAME-WILDCARD,*com.unionpay*
+  - PROCESS-NAME-WILDCARD,*alipaygphone*
+  - PROCESS-NAME-WILDCARD,*sankuai.meituan*
+
+
