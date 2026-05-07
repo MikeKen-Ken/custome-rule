@@ -8,3 +8,4 @@ payload:
   - DOMAIN-SUFFIX,photokit.com
   - PROCESS-NAME-WILDCARD,*weixin*
   - PROCESS-NAME-WILDCARD,*tencent*
+  - PROCESS-NAME-WILDCARD,*WeChat*
