@@ -9,7 +9,6 @@ payload:
   - DOMAIN-SUFFIX,unityedu.com
   - DOMAIN-SUFFIX,unityedu.com.cn
 
-  # Gemini
   - DOMAIN-KEYWORD,gemini
   - DOMAIN-KEYWORD,smartgit
   - DOMAIN-KEYWORD,syntevo
