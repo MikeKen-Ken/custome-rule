@@ -17,3 +17,5 @@ payload:
   - PROCESS-NAME,Unity.exe
   - PROCESS-NAME,Unity.Licensing.Client.exe
   - PROCESS-NAME,com.openai.chatgpt
+
+  - PROCESS-NAME-WILDCARD,*Cursor.exe*
