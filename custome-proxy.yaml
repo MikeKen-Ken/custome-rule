@@ -1,6 +1,8 @@
 payload:
   - DOMAIN-SUFFIX,wps.com
   - DOMAIN-SUFFIX,wpscdn.com
+
+  - DOMAIN-KEYWORD,google
   
   - PROCESS-NAME-WILDCARD,*clash-verge*
   - PROCESS-NAME-WILDCARD,*mihomo*
