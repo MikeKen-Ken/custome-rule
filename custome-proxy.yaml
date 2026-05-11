@@ -1,4 +1,5 @@
 payload:
-# 一般不添加 proxy, 而是修改 direct。除非错误的放到了 cn，那么就需要在这里显式的填入
   - DOMAIN-SUFFIX,.wps.com
   - DOMAIN-SUFFIX,.wpscdn.com
+  
+  - DOMAIN-KEYWORD,github
