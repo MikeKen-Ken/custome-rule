@@ -25,4 +25,5 @@ payload:
   - PROCESS-NAME-WILDCARD,*yonghui.hyd*
   - PROCESS-NAME-WILDCARD,*android.todesk*
   - PROCESS-NAME-WILDCARD,*hikvision.owner*
+  - PROCESS-NAME-WILDCARD,*WXWork*
 
