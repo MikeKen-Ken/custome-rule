@@ -11,6 +11,8 @@ payload:
 
   # Gemini
   - DOMAIN-KEYWORD,gemini
+  - DOMAIN-KEYWORD,smartgit
+  - DOMAIN-KEYWORD,syntevo
 
   - PROCESS-NAME,Unity Hub.exe
   - PROCESS-NAME,Unity.exe
