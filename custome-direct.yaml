@@ -8,6 +8,7 @@ payload:
   - DOMAIN-SUFFIX,photokit.com
   - DOMAIN-SUFFIX,.qq.com
   - DOMAIN-SUFFIX,.cocos.com
+  - DOMAIN-SUFFIX,.cocos.org
   
   - PROCESS-NAME-WILDCARD,*weixin*
   - PROCESS-NAME-WILDCARD,*tencent*
