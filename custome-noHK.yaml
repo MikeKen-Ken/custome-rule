@@ -10,6 +10,7 @@ payload:
   - DOMAIN-SUFFIX,unityedu.com.cn
 
   - DOMAIN-KEYWORD,gemini
+  - DOMAIN-KEYWORD,google
   - DOMAIN-KEYWORD,smartgit
   - DOMAIN-KEYWORD,syntevo
 
