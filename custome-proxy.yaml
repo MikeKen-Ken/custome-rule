@@ -1,6 +1,6 @@
 payload:
-  - DOMAIN-SUFFIX,.wps.com
-  - DOMAIN-SUFFIX,.wpscdn.com
+  - DOMAIN-SUFFIX,wps.com
+  - DOMAIN-SUFFIX,wpscdn.com
   
   - DOMAIN-KEYWORD,github
   
