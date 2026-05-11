@@ -1,11 +1,11 @@
 payload:
-  - DOMAIN-SUFFIX,.steamdb.info
-  - DOMAIN-SUFFIX,.battlenet.com.cn
-  - DOMAIN-SUFFIX,.blzstatic.cn
-  - DOMAIN-SUFFIX,.sign.v2gx.com
-  - DOMAIN-SUFFIX,.yizhongyun.com
-  - DOMAIN-SUFFIX,.eagle.cool
-  - DOMAIN-SUFFIX,.photokit.com
+  - DOMAIN-SUFFIX,steamdb.info
+  - DOMAIN-SUFFIX,battlenet.com.cn
+  - DOMAIN-SUFFIX,blzstatic.cn
+  - DOMAIN-SUFFIX,sign.v2gx.com
+  - DOMAIN-SUFFIX,yizhongyun.com
+  - DOMAIN-SUFFIX,eagle.cool
+  - DOMAIN-SUFFIX,photokit.com
   - DOMAIN-SUFFIX,.qq.com
   
   - PROCESS-NAME-WILDCARD,*weixin*
