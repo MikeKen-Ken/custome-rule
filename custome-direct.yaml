@@ -7,6 +7,7 @@ payload:
   - DOMAIN-SUFFIX,eagle.cool
   - DOMAIN-SUFFIX,photokit.com
   - DOMAIN-SUFFIX,.qq.com
+  - DOMAIN-SUFFIX,.cocos.com
   
   - PROCESS-NAME-WILDCARD,*weixin*
   - PROCESS-NAME-WILDCARD,*tencent*
