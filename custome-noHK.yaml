@@ -10,7 +10,7 @@ payload:
   - DOMAIN-SUFFIX,unityedu.com.cn
 
   # Gemini
-  - DOMAIN-KEYWORD,gemini
+  - DOMAIN-KEYWORD,gemini.
 
   - PROCESS-NAME,Unity Hub.exe
   - PROCESS-NAME,Unity.exe
