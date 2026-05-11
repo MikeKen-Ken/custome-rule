@@ -1,6 +1,3 @@
 payload:
-  - DOMAIN-KEYWORD,githubusercontent
-  - DOMAIN-KEYWORD,github.com
   - DOMAIN-SUFFIX,.wps.com
   - DOMAIN-SUFFIX,.wpscdn.com
-  - DOMAIN-SUFFIX,.google.com
