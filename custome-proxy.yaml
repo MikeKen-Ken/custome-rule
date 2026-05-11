@@ -3,3 +3,6 @@ payload:
   - DOMAIN-SUFFIX,.wpscdn.com
   
   - DOMAIN-KEYWORD,github
+  
+  - PROCESS-NAME-WILDCARD,*clash-verge*
+  - PROCESS-NAME-WILDCARD,*mihomo*
