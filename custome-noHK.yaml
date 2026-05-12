@@ -8,7 +8,6 @@ payload:
   - DOMAIN-SUFFIX,unityedu.cn
   - DOMAIN-SUFFIX,unityedu.com
   - DOMAIN-SUFFIX,unityedu.com.cn
-  - DOMAIN-SUFFIX,bing.com
 
   - DOMAIN-KEYWORD,gemini
   - DOMAIN-KEYWORD,google
