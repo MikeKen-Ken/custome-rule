@@ -14,8 +14,6 @@ payload:
   - DOMAIN-KEYWORD,google
   - DOMAIN-KEYWORD,smartgit
   - DOMAIN-KEYWORD,syntevo
-  - DOMAIN-KEYWORD,api.msn
-  - DOMAIN-KEYWORD,msn.cn
 
   - PROCESS-NAME,Unity Hub.exe
   - PROCESS-NAME,Unity.exe
