@@ -3,6 +3,5 @@ payload:
   - PROCESS-NAME,AdobeGcClient.exe
   
   - DOMAIN-SUFFIX,video-fa.scdn.co    # Spotify video
-  - DOMAIN-SUFFIX,video-fa.scdn.co1
-
-  - shandianshuo.featurebase.app
+  - DOMAIN-SUFFIX,api.shandianshuo.cn
+  - DOMAIN-SUFFIX,shandianshuo.featurebase.app
