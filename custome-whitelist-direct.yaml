@@ -7,6 +7,6 @@ payload:
   - DOMAIN-SUFFIX,msftncsi.com
   - DOMAIN-SUFFIX,mikeken.online
   - DOMAIN-SUFFIX,hnhxzkj.com
-  - DOMAIN-SUFFIX,.volceapplog.com
+  - DOMAIN-SUFFIX,volceapplog.com
   
   - PROCESS-NAME,com.xiaomi.smarthome  
