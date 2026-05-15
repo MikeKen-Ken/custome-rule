@@ -2,5 +2,4 @@ payload:
   - DOMAIN-SUFFIX,wps.com
   - DOMAIN-SUFFIX,wpscdn.com
   
-  - PROCESS-NAME-WILDCARD,*clash-verge*
   - PROCESS-NAME-WILDCARD,*mihomo*
