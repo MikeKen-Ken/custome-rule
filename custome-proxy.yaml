@@ -1,5 +1,3 @@
 payload:
   - DOMAIN-SUFFIX,wps.com
   - DOMAIN-SUFFIX,wpscdn.com
-  
-  - PROCESS-NAME-WILDCARD,*mihomo*
