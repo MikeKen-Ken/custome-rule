@@ -5,3 +5,5 @@ payload:
   - DOMAIN-SUFFIX,video-fa.scdn.co    # Spotify video
   - DOMAIN-SUFFIX,api.shandianshuo.cn
   - DOMAIN-SUFFIX,shandianshuo.featurebase.app
+  
+  - DOMAIN-KEYWORD,todesk-log-upload
