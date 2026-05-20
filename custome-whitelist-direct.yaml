@@ -8,5 +8,3 @@ payload:
   - DOMAIN-SUFFIX,hnhxzkj.com                    # 花仙子科技
   - DOMAIN-SUFFIX,volceapplog.com                # 字节跳动火山引擎日志上报
   - DOMAIN-SUFFIX,snssdk.com                     # 字节跳动（抖音/今日头条等）核心内容分发
-
-  - PROCESS-NAME,com.xiaomi.smarthome            # 米家 App 客户端进程
