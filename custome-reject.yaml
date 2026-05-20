@@ -1,10 +1,9 @@
 payload:
-  - PROCESS-NAME,FontCreator.exe
-  - PROCESS-NAME,AdobeGcClient.exe
+  - PROCESS-NAME,FontCreator.exe                 # 字体设计软件 FontCreator
+  - PROCESS-NAME,AdobeGcClient.exe               # Adobe 正版验证服务（反盗版检测）
   
-  - DOMAIN-SUFFIX,video-fa.scdn.co    # Spotify video
-  - DOMAIN-SUFFIX,api.shandianshuo.cn
-  - DOMAIN-SUFFIX,shandianshuo.featurebase.app
-  - DOMAIN-SUFFIX,logstorage.cocos.com
-  - DOMAIN-SUFFIX,todesk-log-upload.todesk.com
-
+  - DOMAIN-SUFFIX,video-fa.scdn.co               # Spotify 视频内容
+  - DOMAIN-SUFFIX,api.shandianshuo.cn            # 闪电说
+  - DOMAIN-SUFFIX,shandianshuo.featurebase.app   # 闪电说
+  - DOMAIN-SUFFIX,logstorage.cocos.com           # Cocos 引擎编辑器日志上报
+  - DOMAIN-SUFFIX,todesk-log-upload.todesk.com   # ToDesk 远程控制日志上传
