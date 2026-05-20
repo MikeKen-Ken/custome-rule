@@ -10,4 +10,4 @@ payload:
   - DOMAIN-SUFFIX,volceapplog.com
   - DOMAIN-SUFFIX,snssdk.com
   
-  - PROCESS-NAME-WILDCARD,*com.xiaomi.smarthome*
+  - PROCESS-NAME,com.xiaomi.smarthome
