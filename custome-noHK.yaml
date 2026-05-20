@@ -19,5 +19,3 @@ payload:
   - PROCESS-NAME,Unity Hub.exe                   # Unity 节点管理器（用于管理项目和引擎版本）
   - PROCESS-NAME,Unity.exe                       # Unity 编辑器主程序
   - PROCESS-NAME,Unity.Licensing.Client.exe      # Unity 引擎许可证激活与验证程序
-  - PROCESS-NAME,com.openai.chatgpt              # ChatGPT 官方手机客户端进程
-  - PROCESS-NAME,Cursor.exe                      # AI 代码编辑器 Cursor 主程序
