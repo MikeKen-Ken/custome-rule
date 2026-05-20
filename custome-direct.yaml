@@ -5,23 +5,24 @@ payload:
   - DOMAIN-SUFFIX,eagle.cool
   - DOMAIN-SUFFIX,photokit.com
   
-  - PROCESS-NAME-WILDCARD,*weixin*
-  - PROCESS-NAME-WILDCARD,*tencent*
-  - PROCESS-NAME-WILDCARD,*WeChat*
-  - PROCESS-NAME-WILDCARD,*BaiduNetdisk*
-  - PROCESS-NAME-WILDCARD,*jingdong.app*
-  - PROCESS-NAME-WILDCARD,*taobao.taobao*
-  - PROCESS-NAME-WILDCARD,*xingin.xhs*
-  - PROCESS-NAME-WILDCARD,*niu.cloud*
-  - PROCESS-NAME-WILDCARD,*taobao.idlefish*
-  - PROCESS-NAME-WILDCARD,*com.unionpay*
-  - PROCESS-NAME-WILDCARD,*alipaygphone*
-  - PROCESS-NAME-WILDCARD,*sankuai.meituan*
-  - PROCESS-NAME-WILDCARD,*toyota.ftmsapp*
-  - PROCESS-NAME-WILDCARD,*autonavi.minimap*
-  - PROCESS-NAME-WILDCARD,*yonghui.hyd*
-  - PROCESS-NAME-WILDCARD,*android.todesk*
-  - PROCESS-NAME-WILDCARD,*hikvision.owner*
-  - PROCESS-NAME-WILDCARD,*WXWork*
-  - PROCESS-NAME-WILDCARD,*feishu*
+  - PROCESS-NAME,Weixin.exe
+  - PROCESS-NAME,BaiduNetdiskUnite.exe
+  
+  - PROCESS-NAME,com.tencent.mm
+  - PROCESS-NAME,com.baidu.netdisk
+  - PROCESS-NAME,com.jingdong.app.mall
+  - PROCESS-NAME,com.taobao.taobao
+  - PROCESS-NAME,com.xingin.xhs
+  - PROCESS-NAME,com.niu.cloud
+  - PROCESS-NAME,com.taobao.idlefish
+  - PROCESS-NAME,com.unionpay
+  - PROCESS-NAME,com.eg.android.AlipayGphone
+  - PROCESS-NAME,com.sankuai.meituan
+  - PROCESS-NAME,com.toyota.ftmsApp
+  - PROCESS-NAME,com.autonavi.minimap
+  - PROCESS-NAME,cn.yonghui.hyd
+  - PROCESS-NAME,youqu.android.todesk
+  - PROCESS-NAME,com.hikvision.owner
+  - PROCESS-NAME,com.tencent.wework
+  - PROCESS-NAME,com.ss.android.lark
 
