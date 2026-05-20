@@ -1,7 +1,4 @@
 payload:
-  - PROCESS-NAME,FontCreator.exe                 # 字体设计软件 FontCreator
-  - PROCESS-NAME,AdobeGcClient.exe               # Adobe 正版验证服务（反盗版检测）
-  
   - DOMAIN-SUFFIX,video-fa.scdn.co               # Spotify 视频内容
   - DOMAIN-SUFFIX,api.shandianshuo.cn            # 闪电说
   - DOMAIN-SUFFIX,shandianshuo.featurebase.app   # 闪电说
