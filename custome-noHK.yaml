@@ -9,6 +9,7 @@ payload:
   - DOMAIN-SUFFIX,unityedu.com                   # Unity
   - DOMAIN-SUFFIX,unityedu.com.cn                # Unity 
 
-  - DOMAIN-SUFFIX,google.com                     # 谷歌
+  - DOMAIN-SUFFIX,google.com                     # 谷歌 
+  - DOMAIN-SUFFIX,gstatic.com                    # 谷歌 
   - DOMAIN-SUFFIX,googleusercontent.com          # 谷歌
   - DOMAIN-SUFFIX,gemini.gstatic.com             # gemini
