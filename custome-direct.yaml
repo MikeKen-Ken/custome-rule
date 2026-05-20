@@ -1,6 +1,7 @@
 payload:
-  - DOMAIN-SUFFIX,steamdb.info
-  - DOMAIN-SUFFIX,sign.v2gx.com
+  - DOMAIN-SUFFIX,steamdb.info   # Steam 第三方数据库（查史低/数据），直连以避免代理 IP 触发 CF 验证码
+  - DOMAIN-SUFFIX,steampowered
+  - DOMAIN-SUFFIX,sign.v2gx.com   
   - DOMAIN-SUFFIX,yizhongyun.com
-  - DOMAIN-SUFFIX,eagle.cool
-  - DOMAIN-SUFFIX,photokit.com
+  - DOMAIN-SUFFIX,eagle.cool      # Eagle 
+  - DOMAIN-SUFFIX,photokit.com    # PhotoKit 在线图片编辑器（国内团队开发），直连可获得最佳的图片加载速度
