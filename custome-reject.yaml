@@ -6,6 +6,5 @@ payload:
   - DOMAIN-SUFFIX,api.shandianshuo.cn
   - DOMAIN-SUFFIX,shandianshuo.featurebase.app
   - DOMAIN-SUFFIX,logstorage.cocos.com
-  
-  - DOMAIN-KEYWORD,todesk-log-upload
+  - DOMAIN-SUFFIX,todesk-log-upload.todesk.com
 
