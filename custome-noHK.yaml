@@ -15,7 +15,3 @@ payload:
   - DOMAIN-SUFFIX,immersivetranslate.com         # 沉浸式翻译
   - DOMAIN-SUFFIX,smartgit.dev                   # Git 客户端 SmartGit 相关域名
   - DOMAIN-SUFFIX,syntevo.com                    # SmartGit 母公司 Syntevo 官网及授权验证
-
-  - PROCESS-NAME,Unity Hub.exe                   # Unity 节点管理器（用于管理项目和引擎版本）
-  - PROCESS-NAME,Unity.exe                       # Unity 编辑器主程序
-  - PROCESS-NAME,Unity.Licensing.Client.exe      # Unity 引擎许可证激活与验证程序
