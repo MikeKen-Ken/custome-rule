@@ -1,2 +1,3 @@
 payload:
-  - PROCESS-NAME-WILDCARD,*Spotify*
+  - PROCESS-NAME,com.spotify.com
+  - PROCESS-NAME,Spotify.exe
