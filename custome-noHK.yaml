@@ -12,6 +12,3 @@ payload:
   - DOMAIN-SUFFIX,google.com                     # 谷歌
   - DOMAIN-SUFFIX,googleusercontent.com          # 谷歌
   - DOMAIN-SUFFIX,gemini.gstatic.com             # gemini
-  - DOMAIN-SUFFIX,immersivetranslate.com         # 沉浸式翻译
-  - DOMAIN-SUFFIX,smartgit.dev                   # Git 客户端 SmartGit 相关域名
-  - DOMAIN-SUFFIX,syntevo.com                    # SmartGit 母公司 Syntevo 官网及授权验证
