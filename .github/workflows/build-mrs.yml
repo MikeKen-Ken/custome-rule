@@ -1,0 +1,71 @@
+name: Build MRS rule-sets
+
+on:
+  # 推送到 main 且改动匹配下列路径时自动运行
+  push:
+    branches:
+      - main
+    paths:
+      - "custome-*.yaml"
+      - "scripts/**"
+      - ".github/workflows/build-mrs.yml"
+  # 在 GitHub Actions 页可手动点 Run workflow
+  workflow_dispatch:
+  # 每天 UTC 22:30 构建（北京时间次日 06:30）
+  schedule:
+    - cron: "30 22 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+
+      - name: Set release metadata
+        run: |
+          echo "RELEASE_NAME=Released on $(date -u +%Y%m%d%H%M)" >> "$GITHUB_ENV"
+          echo "TAG_NAME=$(date -u +%Y%m%d%H%M)" >> "$GITHUB_ENV"
+
+      - name: Download mihomo
+        run: |
+          mihomo_version=$(curl -sSL https://api.github.com/repos/MetaCubeX/mihomo/releases \
+            | grep '"tag_name"' | grep -v 'Alpha' | head -n 1 | sed -e 's/.*v/v/' -e 's/".*//')
+          curl -sSL "https://github.com/MetaCubeX/mihomo/releases/download/${mihomo_version}/mihomo-linux-amd64-${mihomo_version}.gz" | gzip -d > ./mihomo
+          chmod +x ./mihomo
+          ./mihomo -v || true
+
+      - name: Build .mrs from custome-*.yaml
+        run: bash scripts/build-mrs.sh
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: ${{ env.RELEASE_NAME }}
+          tag_name: ${{ env.TAG_NAME }}
+          draft: false
+          prerelease: false
+          files: ./publish/*
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Push artifacts to release branch
+        run: |
+          cd publish
+          git init
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b release
+          git add .
+          git commit -m "${{ env.RELEASE_NAME }}"
+          git remote add origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
+          git push -f origin release
+
+      - name: Purge jsDelivr CDN cache
+        run: |
+          cd publish
+          for file in *; do
+            curl -fsS "https://purge.jsdelivr.net/gh/${{ github.repository }}@release/${file}" || true
+          done
