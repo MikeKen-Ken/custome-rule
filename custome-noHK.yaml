@@ -1,16 +1,16 @@
 payload:
-  - DOMAIN-SUFFIX,multiplay.cn                   # Unity 
-  - DOMAIN-SUFFIX,unity.cn                       # Unity
-  - DOMAIN-SUFFIX,unity.com                      # Unity
-  - DOMAIN-SUFFIX,unity3d.com                    # Unity
-  - DOMAIN-SUFFIX,unity3dusercontent.com         # Unity
-  - DOMAIN-SUFFIX,unitychina.cn                  # Unity
-  - DOMAIN-SUFFIX,unityedu.cn                    # Unity 
-  - DOMAIN-SUFFIX,unityedu.com                   # Unity
-  - DOMAIN-SUFFIX,unityedu.com.cn                # Unity 
+  - '+.multiplay.cn'                   # Unity
+  - '+.unity.cn'                       # Unity
+  - '+.unity.com'                      # Unity
+  - '+.unity3d.com'                    # Unity
+  - '+.unity3dusercontent.com'         # Unity
+  - '+.unitychina.cn'                  # Unity
+  - '+.unityedu.cn'                    # Unity
+  - '+.unityedu.com'                   # Unity
+  - '+.unityedu.com.cn'                # Unity
 
-  - DOMAIN-SUFFIX,google.com                     # 谷歌
-  - DOMAIN-SUFFIX,googleapis.cn                  # 谷歌 
-  - DOMAIN-SUFFIX,gstatic.com                    # 谷歌 
-  - DOMAIN-SUFFIX,googleusercontent.com          # 谷歌
-  - DOMAIN-SUFFIX,gemini.gstatic.com             # gemini
+  - '+.google.com'                     # 谷歌
+  - '+.googleapis.cn'                  # 谷歌
+  - '+.gstatic.com'                    # 谷歌
+  - '+.googleusercontent.com'          # 谷歌
+  - '+.gemini.gstatic.com'             # gemini

@@ -1,10 +1,10 @@
 payload:
-  - DOMAIN-SUFFIX,metok.sys.miui.com             # 小米位置服务与数据采集（米托克）
-  - DOMAIN-SUFFIX,api.sec.miui.com               # 小米安全中心 API（用于检测与更新）
-  - DOMAIN-SUFFIX,com.xiaomi.smarthome           # 米家 App 相关域名
-  - DOMAIN-SUFFIX,msftconnecttest.com            # 微软 Windows 网络连接探测
-  - DOMAIN-SUFFIX,msftncsi.com                   # 微软 Windows 网络状态指示器（NCSI）
-  - DOMAIN-SUFFIX,mikeken.online                 # 本人主页
-  - DOMAIN-SUFFIX,hnhxzkj.com                    # 花仙子科技
-  - DOMAIN-SUFFIX,volceapplog.com                # 字节跳动火山引擎日志上报
-  - DOMAIN-SUFFIX,snssdk.com                     # 字节跳动（抖音/今日头条等）核心内容分发
+  - '+.metok.sys.miui.com'             # 小米位置服务与数据采集（米托克）
+  - '+.api.sec.miui.com'               # 小米安全中心 API（用于检测与更新）
+  - '+.com.xiaomi.smarthome'           # 米家 App 相关域名
+  - '+.msftconnecttest.com'            # 微软 Windows 网络连接探测
+  - '+.msftncsi.com'                   # 微软 Windows 网络状态指示器（NCSI）
+  - '+.mikeken.online'                 # 本人主页
+  - '+.hnhxzkj.com'                    # 花仙子科技
+  - '+.volceapplog.com'                # 字节跳动火山引擎日志上报
+  - '+.snssdk.com'                     # 字节跳动（抖音/今日头条等）核心内容分发

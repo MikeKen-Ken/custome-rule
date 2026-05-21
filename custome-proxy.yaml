@@ -1,3 +1,3 @@
 payload:
-  - DOMAIN-SUFFIX,wps.com # 用于国际版
-  - DOMAIN-SUFFIX,wpscdn.com # 用于国际版
+  - '+.wps.com' # 用于国际版
+  - '+.wpscdn.com' # 用于国际版

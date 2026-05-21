@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# note: 将 custome-*.yaml（DOMAIN-SUFFIX 写法）转为 Mihomo domain 规则集并生成 .mrs
+# note: 将 custome-*.yaml（Mihomo +. 后缀规则）转为 domain 规则集并生成 .mrs
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
@@ -19,15 +19,11 @@ mkdir -p "$PUBLISH"
 shopt -s nullglob
 for src in custome-*.yaml; do
   base="${src%.yaml}"
-  tmp="${PUBLISH}/${base}.domain.yaml"
   mrs="${PUBLISH}/${base}.mrs"
 
-  echo "payload:" >"$tmp"
   count=0
   while IFS= read -r line; do
-    [[ "$line" =~ DOMAIN-SUFFIX,([^[:space:]#]+) ]] || continue
-    domain="${BASH_REMATCH[1]}"
-    printf "  - '+.%s'\n" "$domain" >>"$tmp"
+    [[ "$line" =~ ^[[:space:]]*-[[:space:]]*['\"]?\+\\. ]] || continue
     count=$((count + 1))
   done <"$src"
 
@@ -35,13 +31,11 @@ for src in custome-*.yaml; do
 
   if [[ "$count" -eq 0 ]]; then
     echo "skip (no rules): $src"
-    rm -f "$tmp"
     continue
   fi
 
-  "$MIHOMO" convert-ruleset domain yaml "$tmp" "$mrs"
+  "$MIHOMO" convert-ruleset domain yaml "$src" "$mrs"
   "$MIHOMO" convert-ruleset domain mrs "$mrs" "${PUBLISH}/${base}.list"
-  rm -f "$tmp"
   echo "built: $mrs ($count rules)"
 done
 

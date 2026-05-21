@@ -1,6 +1,6 @@
 payload:
-  - DOMAIN-SUFFIX,video-fa.scdn.co               # Spotify 视频内容
-  - DOMAIN-SUFFIX,api.shandianshuo.cn            # 闪电说
-  - DOMAIN-SUFFIX,shandianshuo.featurebase.app   # 闪电说
-  - DOMAIN-SUFFIX,logstorage.cocos.com           # Cocos 引擎编辑器日志上报
-  - DOMAIN-SUFFIX,todesk-log-upload.todesk.com   # ToDesk 远程控制日志上传
+  - '+.video-fa.scdn.co'               # Spotify 视频内容
+  - '+.api.shandianshuo.cn'            # 闪电说
+  - '+.shandianshuo.featurebase.app'   # 闪电说
+  - '+.logstorage.cocos.com'           # Cocos 引擎编辑器日志上报
+  - '+.todesk-log-upload.todesk.com'   # ToDesk 远程控制日志上传
