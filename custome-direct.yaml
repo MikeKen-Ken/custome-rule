@@ -1,5 +1,5 @@
 payload:
-  - DOMAIN-SUFFIX,steamdb.info   # Steam 第三方数据库（查史低/数据），直连以避免代理 IP 触发 CF 验证码
+  - DOMAIN-SUFFIX,steamdb.info   # Steamdb，直连以避免代理 IP 触发 CF 验证码
   - DOMAIN-SUFFIX,sign.v2gx.com   # 电子印章
   - DOMAIN-SUFFIX,yizhongyun.com
   - DOMAIN-SUFFIX,eagle.cool      # Eagle 
