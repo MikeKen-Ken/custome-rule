@@ -11,6 +11,7 @@
 PROCESS-NAME-WILDCARD,*BaiduNetdisk*              # 百度网盘
 PROCESS-NAME-WILDCARD,*Feishu*                    # 飞书
 PROCESS-NAME-WILDCARD,*GameViewer*                # GameViewer
+PROCESS-NAME,CocosCreator.exe                     # Cocos Creator 编辑器
 PROCESS-NAME-WILDCARD,*Weixin*                    # 微信
 PROCESS-NAME,WeChatAppEx.exe                      # 微信小程序/内置浏览器
 PROCESS-NAME-WILDCARD,*WXWork*                    # 企业微信
