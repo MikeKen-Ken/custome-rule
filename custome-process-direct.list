@@ -1,0 +1,149 @@
+# 按进程名直连（classical 规则集，由 RULE-SET custome-process-direct 指定走 DIRECT）
+#
+# Android：填包名，与 Clash 连接日志里的 process 一致
+# Windows：填进程名或 .exe
+# PROCESS-NAME：精确匹配
+# PROCESS-NAME-WILDCARD：通配（* 任意长度，? 单字符），大小写不敏感
+#
+# 通配 = 匹配「已安装且包名符合前缀」的应用；未安装则无效果
+
+# ── Windows（PC 端 Clash 时生效）────────────────────────────
+PROCESS-NAME-WILDCARD,*BaiduNetdisk*              # 百度网盘
+PROCESS-NAME-WILDCARD,*Feishu*                    # 飞书
+PROCESS-NAME-WILDCARD,*GameViewer*                # GameViewer
+PROCESS-NAME-WILDCARD,*Weixin*                    # 微信
+PROCESS-NAME-WILDCARD,*WXWork*                    # 企业微信
+
+# ── 社交 / 资讯 / 内容 ────────────────────────────────────
+PROCESS-NAME-WILDCARD,com.tencent.*               # 腾讯系：微信、QQ、TIM、企微、腾讯会议、QQ音乐/视频、地图、新闻、文档、微信输入法、渠道游戏等
+PROCESS-NAME-WILDCARD,com.qq.*                    # QQ 系补充：微云等（包名非 com.tencent 开头）
+PROCESS-NAME-WILDCARD,com.ss.android.*            # 字节系：抖音、头条、飞书、懂车帝等
+PROCESS-NAME-WILDCARD,com.bytedance.*             # 字节系补充：豆包输入法等
+PROCESS-NAME-WILDCARD,com.baidu.*                 # 百度系：贴吧、地图、网盘、输入法、搜索等
+PROCESS-NAME-WILDCARD,com.sina.*                  # 新浪系：微博、新浪新闻等
+PROCESS-NAME-WILDCARD,com.kuaishou.*              # 快手系（含极速版等子包）
+PROCESS-NAME-WILDCARD,com.smile.gifmaker          # 快手主包（老包名，与上行互补）
+PROCESS-NAME-WILDCARD,com.ifeng.*                 # 凤凰新闻等
+PROCESS-NAME-WILDCARD,com.dragon.*                # 番茄小说等
+PROCESS-NAME-WILDCARD,com.lofter.*                # LOFTER
+PROCESS-NAME-WILDCARD,com.hupu.*                  # 虎扑
+PROCESS-NAME,tv.danmaku.bili                      # 哔哩哔哩（包名无 com 前缀）
+PROCESS-NAME,com.xingin.xhs                       # 小红书
+PROCESS-NAME,com.zhihu.android                    # 知乎
+PROCESS-NAME,com.douban.frodo                     # 豆瓣
+
+# ── 电商 / 本地生活 / 支付 ──────────────────────────────────
+PROCESS-NAME-WILDCARD,com.alibaba.*               # 阿里系：钉钉、1688 等
+PROCESS-NAME-WILDCARD,com.taobao.*                # 淘宝、闲鱼、飞猪等
+PROCESS-NAME-WILDCARD,com.tmall.*                 # 天猫
+PROCESS-NAME-WILDCARD,com.jingdong.*              # 京东主站等
+PROCESS-NAME-WILDCARD,com.jd.*                    # 京东系补充：京东金融等
+PROCESS-NAME-WILDCARD,com.sankuai.*               # 美团、美团外卖
+PROCESS-NAME,me.ele                               # 饿了么
+PROCESS-NAME-WILDCARD,com.dianping.*              # 大众点评
+PROCESS-NAME-WILDCARD,com.xunmeng.*               # 拼多多
+PROCESS-NAME-WILDCARD,com.achievo.*               # 唯品会
+PROCESS-NAME-WILDCARD,com.suning.*                # 苏宁易购
+PROCESS-NAME-WILDCARD,com.shizhuang.*             # 得物
+PROCESS-NAME-WILDCARD,com.lianjia.*               # 贝壳找房
+PROCESS-NAME-WILDCARD,com.homelink.*              # 链家
+PROCESS-NAME-WILDCARD,com.wuba*                   # 58 同城、转转等
+PROCESS-NAME-WILDCARD,com.hpbr.*                  # Boss 直聘
+PROCESS-NAME-WILDCARD,com.sf.*                    # 顺丰速运
+PROCESS-NAME-WILDCARD,com.cainiao.*               # 菜鸟
+PROCESS-NAME-WILDCARD,com.wudaokou.*              # 盒马
+PROCESS-NAME-WILDCARD,com.yaya.*                  # 叮咚买菜
+PROCESS-NAME-WILDCARD,cn.yonghui.*                # 永辉生活
+PROCESS-NAME-WILDCARD,com.niu.*                   # 小牛电动等
+PROCESS-NAME-WILDCARD,com.lucky.*                 # 瑞幸咖啡
+PROCESS-NAME-WILDCARD,com.starbucks.*             # 星巴克中国
+PROCESS-NAME-WILDCARD,com.mcdonalds.*             # 麦当劳中国
+PROCESS-NAME-WILDCARD,com.ishansong*              # 闪送
+PROCESS-NAME-WILDCARD,com.jingyao.*               # 哈啰出行
+PROCESS-NAME,com.eg.android.AlipayGphone          # 支付宝
+PROCESS-NAME,com.unionpay                         # 云闪付
+
+# ── 视频 / 音乐 / 直播 ─────────────────────────────────────
+PROCESS-NAME-WILDCARD,com.netease.*               # 网易系：云音乐、邮箱大师、部分游戏等
+PROCESS-NAME-WILDCARD,com.sohu.*                  # 搜狐系：搜狗输入法、搜狐视频等
+PROCESS-NAME-WILDCARD,com.kugou.*                 # 酷狗音乐
+PROCESS-NAME-WILDCARD,com.lemon.*                 # 剪映
+PROCESS-NAME-WILDCARD,com.duowan.*                # 虎牙直播
+PROCESS-NAME-WILDCARD,air.tv.douyu.*              # 斗鱼
+PROCESS-NAME-WILDCARD,com.hunantv.*               # 芒果 TV
+PROCESS-NAME-WILDCARD,com.cmcc.*                  # 咪咕视频等移动系
+PROCESS-NAME-WILDCARD,com.changba*                # 唱吧
+PROCESS-NAME,com.qiyi.video                       # 爱奇艺
+PROCESS-NAME,com.youku.phone                      # 优酷
+
+# ── 出行 / 地图 / 旅行 ─────────────────────────────────────
+PROCESS-NAME,com.autonavi.minimap                 # 高德地图
+PROCESS-NAME,com.sdu.didi.psnger                  # 滴滴出行
+PROCESS-NAME,ctrip.android.view                     # 携程旅行
+PROCESS-NAME,com.Qunar                            # 去哪儿旅行
+PROCESS-NAME,com.MobileTicket                     # 铁路 12306
+PROCESS-NAME,com.yipiao                           # 智行火车票
+PROCESS-NAME,com.tongcheng.android                # 同程旅行
+PROCESS-NAME,com.umetrip.android.msky.app         # 航旅纵横
+PROCESS-NAME-WILDCARD,com.cubic.*                 # 汽车之家
+PROCESS-NAME-WILDCARD,com.toyota.*                # 一汽丰田等
+
+# ── 办公 / 网盘 / 输入法 / 工具 ───────────────────────────
+PROCESS-NAME-WILDCARD,com.youdao.*                # 有道词典、有道云笔记等
+PROCESS-NAME-WILDCARD,com.iflytek.*               # 讯飞输入法
+PROCESS-NAME-WILDCARD,com.intsig.*                # 扫描全能王
+PROCESS-NAME-WILDCARD,com.xunlei.*                # 迅雷
+PROCESS-NAME-WILDCARD,com.quark.*                 # 夸克浏览器
+PROCESS-NAME-WILDCARD,com.alicloud.*              # 阿里云盘
+PROCESS-NAME-WILDCARD,com.hikvision.*             # 海康互联
+PROCESS-NAME-WILDCARD,youqu.android.*             # ToDesk
+PROCESS-NAME-WILDCARD,cn.wps.*                    # WPS Office
+PROCESS-NAME-WILDCARD,chuxin.shimo.*              # 石墨文档
+PROCESS-NAME,com.yinxiang                         # 印象笔记
+PROCESS-NAME,com.UCMobile                         # UC 浏览器
+
+# ── 银行 / 证券 ─────────────────────────────────────────────
+PROCESS-NAME-WILDCARD,com.chinamworld.*             # 中行、建行等（chinamworld 系）
+PROCESS-NAME-WILDCARD,com.cmbchina.*              # 掌上生活等招行信用卡系
+PROCESS-NAME,com.icbc                             # 工商银行
+PROCESS-NAME,com.android.bankabc                  # 农业银行
+PROCESS-NAME,cmb.pb                               # 招商银行（主 App，非掌上生活包名）
+PROCESS-NAME-WILDCARD,com.yitong.*                # 邮储银行
+PROCESS-NAME-WILDCARD,com.bankcomm.*              # 交通银行
+PROCESS-NAME-WILDCARD,com.pingan.*                # 平安口袋银行
+PROCESS-NAME-WILDCARD,com.hexin.*                 # 同花顺
+PROCESS-NAME-WILDCARD,com.xueqiu.*                # 雪球
+PROCESS-NAME-WILDCARD,com.eastmoney.*             # 东方财富
+
+# ── 政务 / 运营商 ───────────────────────────────────────────
+PROCESS-NAME-WILDCARD,cn.gov.*                    # 个税、数字人民币等政务 App
+PROCESS-NAME-WILDCARD,com.tmri.*                  # 交管 12123
+PROCESS-NAME,com.greenpoint.android.mc10086.activity # 中国移动（官方包名含 .activity）
+PROCESS-NAME-WILDCARD,com.sinovatech.*            # 中国联通
+PROCESS-NAME-WILDCARD,com.ct.*                    # 中国电信
+
+# ── 健康 / 游戏 / 其他厂商 ─────────────────────────────────
+PROCESS-NAME-WILDCARD,com.gotokeep.*              # Keep
+PROCESS-NAME-WILDCARD,com.huawei.*                # 华为运动健康等
+PROCESS-NAME-WILDCARD,com.mi.*                    # 小米运动健康等（com.mi.health，非 miui 前缀）
+PROCESS-NAME-WILDCARD,com.miHoYo.*               # 原神、星穹铁道等
+PROCESS-NAME-WILDCARD,com.happyelements.*         # 开心消消乐等
+
+# ── 小米 / HyperOS（小米手机建议保留）──────────────────────
+# 说明：勿对 com.android.* 做通配，易误伤 Google 等系统组件
+PROCESS-NAME-WILDCARD,com.miui.*                  # MIUI/HyperOS：桌面、相册、天气、小爱、安全中心、笔记、计算器等系统应用
+PROCESS-NAME-WILDCARD,com.xiaomi.*                # 小米系：应用商店、米家、云服务、互传、商城、有品、游戏中心等
+PROCESS-NAME-WILDCARD,com.lbe.security.miui       # 权限管理
+PROCESS-NAME,com.duokan.phone.remotecontroller    # 万能遥控
+# 以下为 MIUI 沿用的 AOSP 包名（须逐条列出）
+PROCESS-NAME,com.android.settings                 # 设置
+PROCESS-NAME,com.android.browser                  # 小米浏览器
+PROCESS-NAME,com.android.fileexplorer             # 文件管理
+PROCESS-NAME,com.android.camera                   # 相机
+PROCESS-NAME,com.android.contacts                 # 联系人
+PROCESS-NAME,com.android.incallui                 # 来电界面
+PROCESS-NAME,com.android.mms                      # 短信（常见 MIUI 包名）
+PROCESS-NAME,com.android.messaging                # 短信（部分 HyperOS）
+PROCESS-NAME,com.android.calendar                 # 日历
+PROCESS-NAME,com.android.thememanager             # 主题
+PROCESS-NAME,com.android.updater                  # 系统更新
