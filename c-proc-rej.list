@@ -1,4 +1,4 @@
-# 按进程名拒绝（RULE-SET proc-rej → REJECT）
+# 按进程名拒绝（RULE-SET c-proc-rej → REJECT）
 # Android：填应用包名，如 com.example.app（与连接日志中的 process 字段一致）
 # Windows：填进程名或 .exe，如 WeChat.exe
 # 规则格式：PROCESS-NAME,<名称>

@@ -1,4 +1,4 @@
-# 按进程名走代理（RULE-SET proc-pxy）
+# 按进程名走代理（RULE-SET c-proc-pxy）
 # Android：填应用包名
 # Windows：填进程名或 .exe
 # 规则格式：PROCESS-NAME,<名称>

@@ -1,4 +1,4 @@
-# 按进程名直连（classical 规则集，RULE-SET proc-dir → DIRECT）
+# 按进程名直连（classical 规则集，RULE-SET c-proc-dir → DIRECT）
 #
 # Android：填包名，与 Clash 连接日志里的 process 一致
 # Windows：填进程名或 .exe

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# note: 将 *.yaml（Mihomo +. 后缀规则）转为 domain 规则集并生成 .mrs；proc-*.list 原样发布
+# note: 将 c-*.yaml（Mihomo +. 后缀规则）转为 domain 规则集并生成 .mrs；c-proc-*.list 原样发布
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
@@ -43,7 +43,7 @@ mkdir -p "$PUBLISH"
 _plus_domain_re='^[[:space:]]*-[[:space:]]*["'\'']?\+\.'
 
 shopt -s nullglob
-for src in *.yaml; do
+for src in c-*.yaml; do
   base="${src%.yaml}"
   mrs="${PUBLISH}/${base}.mrs"
   publish_yaml="${PUBLISH}/${src}"
@@ -69,7 +69,7 @@ for src in *.yaml; do
   echo "built: $mrs ($count rules)"
 done
 
-for src in proc-*.list; do
+for src in c-proc-*.list; do
   [[ -f "$src" ]] || continue
   write_stripped_file "$src" "${PUBLISH}/${src}"
   count=0
