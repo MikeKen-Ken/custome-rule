@@ -16,6 +16,9 @@ fi
 rm -rf "$PUBLISH"
 mkdir -p "$PUBLISH"
 
+# Mihomo +. 域名规则行：- '+.example' / - "+.example" / - +.example
+_custome_plus_domain_re='^[[:space:]]*-[[:space:]]*["'\'']?\+\.'
+
 shopt -s nullglob
 for src in custome-*.yaml; do
   base="${src%.yaml}"
@@ -23,7 +26,7 @@ for src in custome-*.yaml; do
 
   count=0
   while IFS= read -r line; do
-    [[ "$line" =~ ^[[:space:]]*-[[:space:]]*[\"']?\+\\. ]] || continue
+    [[ "$line" =~ $_custome_plus_domain_re ]] || continue
     count=$((count + 1))
   done <"$src"
 
