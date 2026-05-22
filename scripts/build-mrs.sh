@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# note: 将 custome-*.yaml（Mihomo +. 后缀规则）转为 domain 规则集并生成 .mrs
+# note: 将 *.yaml（Mihomo +. 后缀规则）转为 domain 规则集并生成 .mrs；proc-*.list 原样发布
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
@@ -40,10 +40,10 @@ rm -rf "$PUBLISH"
 mkdir -p "$PUBLISH"
 
 # Mihomo +. 域名规则行：- '+.example' / - "+.example" / - +.example
-_custome_plus_domain_re='^[[:space:]]*-[[:space:]]*["'\'']?\+\.'
+_plus_domain_re='^[[:space:]]*-[[:space:]]*["'\'']?\+\.'
 
 shopt -s nullglob
-for src in custome-*.yaml; do
+for src in *.yaml; do
   base="${src%.yaml}"
   mrs="${PUBLISH}/${base}.mrs"
   publish_yaml="${PUBLISH}/${src}"
@@ -51,7 +51,7 @@ for src in custome-*.yaml; do
 
   count=0
   while IFS= read -r line; do
-    [[ "$line" =~ $_custome_plus_domain_re ]] || continue
+    [[ "$line" =~ $_plus_domain_re ]] || continue
     count=$((count + 1))
   done <"$src"
 
@@ -69,7 +69,7 @@ for src in custome-*.yaml; do
   echo "built: $mrs ($count rules)"
 done
 
-for src in custome-process-*.list; do
+for src in proc-*.list; do
   [[ -f "$src" ]] || continue
   write_stripped_file "$src" "${PUBLISH}/${src}"
   count=0
