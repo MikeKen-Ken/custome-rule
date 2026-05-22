@@ -39,4 +39,15 @@ for src in custome-*.yaml; do
   echo "built: $mrs ($count rules)"
 done
 
+for src in custome-process-*.list; do
+  [[ -f "$src" ]] || continue
+  cp "$src" "$PUBLISH/"
+  count=0
+  while IFS= read -r line; do
+    [[ "$line" =~ ^[[:space:]]*PROCESS-NAME(-WILDCARD|-REGEX)?, ]] || continue
+    count=$((count + 1))
+  done <"$src"
+  echo "copied: $src ($count rules)"
+done
+
 echo "done. artifacts in $PUBLISH"
