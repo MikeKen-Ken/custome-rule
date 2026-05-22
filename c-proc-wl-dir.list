@@ -6,5 +6,3 @@
 # PROCESS-NAME-WILDCARD：通配（* 任意长度，? 单字符），大小写不敏感
 
 # ── Windows（PC 端 Clash 时生效）────────────────────────────
-PROCESS-NAME,localsend_app.exe                    # LocalSend
-PROCESS-NAME,LocalSend.exe                        # LocalSend
