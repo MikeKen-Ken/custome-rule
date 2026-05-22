@@ -23,6 +23,7 @@ PROCESS-NAME-WILDCARD,com.tencent.*               # 腾讯系：微信、QQ、TI
 PROCESS-NAME-WILDCARD,com.qq.*                    # QQ 系补充：微云等（包名非 com.tencent 开头）
 PROCESS-NAME-WILDCARD,com.ss.android.*            # 字节系：抖音、头条、飞书、懂车帝等
 PROCESS-NAME-WILDCARD,com.bytedance.*             # 字节系补充：豆包输入法等
+PROCESS-NAME,com.larus.nova                       # 豆包 APP
 PROCESS-NAME-WILDCARD,com.baidu.*                 # 百度系：贴吧、地图、网盘、输入法、搜索等
 PROCESS-NAME-WILDCARD,com.sina.*                  # 新浪系：微博、新浪新闻等
 PROCESS-NAME-WILDCARD,com.kuaishou.*              # 快手系（含极速版等子包）
