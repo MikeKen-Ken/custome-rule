@@ -23,7 +23,7 @@ for src in custome-*.yaml; do
 
   count=0
   while IFS= read -r line; do
-    [[ "$line" =~ ^[[:space:]]*-[[:space:]]*['\"]?\+\\. ]] || continue
+    [[ "$line" =~ ^[[:space:]]*-[[:space:]]*[\"']?\+\\. ]] || continue
     count=$((count + 1))
   done <"$src"
 
