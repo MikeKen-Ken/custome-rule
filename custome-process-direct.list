@@ -12,7 +12,10 @@ PROCESS-NAME-WILDCARD,*BaiduNetdisk*              # 百度网盘
 PROCESS-NAME-WILDCARD,*Feishu*                    # 飞书
 PROCESS-NAME-WILDCARD,*GameViewer*                # GameViewer
 PROCESS-NAME-WILDCARD,*Weixin*                    # 微信
+PROCESS-NAME,WeChatAppEx.exe                      # 微信小程序/内置浏览器
 PROCESS-NAME-WILDCARD,*WXWork*                    # 企业微信
+PROCESS-NAME,WeMailNode_x64.exe                   # 企业微信邮箱节点
+PROCESS-NAME,WXDrive_x64.exe                      # 企业微信微盘
 
 # ── 社交 / 资讯 / 内容 ────────────────────────────────────
 PROCESS-NAME-WILDCARD,com.tencent.*               # 腾讯系：微信、QQ、TIM、企微、腾讯会议、QQ音乐/视频、地图、新闻、文档、微信输入法、渠道游戏等
