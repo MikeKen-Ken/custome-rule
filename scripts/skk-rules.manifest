@@ -1,0 +1,7 @@
+# Sukka Ruleset 同步清单（源：SukkaLab/ruleset.skk.moe 镜像）
+# 格式：输出名|远程相对路径|类型(mrs=domain 转 mrs，classical=原样发布为 .list)
+skk-cdn-domainset|domainset/cdn.txt|mrs
+skk-cdn-non_ip|non_ip/cdn.txt|classical
+skk-download-domainset|domainset/download.txt|mrs
+skk-download-non_ip|non_ip/download.txt|classical
+skk-apple-cn|non_ip/apple_cn.txt|classical

@@ -36,8 +36,11 @@ write_stripped_file() {
   done <"$src" >"$dest"
 }
 
-rm -rf "$PUBLISH"
 mkdir -p "$PUBLISH"
+# 若单独运行本脚本则清空 publish；由 CI 串联 build-skk 时保留已有产物
+if [[ "${BUILD_MRS_CLEAN_PUBLISH:-1}" == "1" ]]; then
+  rm -rf "${PUBLISH:?}"/*
+fi
 
 # Mihomo +. 域名规则行：- '+.example' / - "+.example" / - +.example
 _plus_domain_re='^[[:space:]]*-[[:space:]]*["'\'']?\+\.'

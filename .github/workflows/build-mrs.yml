@@ -6,7 +6,8 @@ on:
     branches:
       - main
     paths:
-      - "custome-*.yaml"
+      - "c-*.yaml"
+      - "c-proc-*.list"
       - "scripts/**"
       - ".github/workflows/build-mrs.yml"
   # 在 GitHub Actions 页可手动点 Run workflow
@@ -37,8 +38,11 @@ jobs:
           chmod +x ./mihomo
           ./mihomo -v || true
 
-      - name: Build .mrs from custome-*.yaml
-        run: bash scripts/build-mrs.sh
+      - name: Build .mrs from c-*.yaml and Sukka skk-* rules
+        run: |
+          export BUILD_MRS_CLEAN_PUBLISH=1
+          bash scripts/build-mrs.sh
+          bash scripts/build-skk.sh
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
