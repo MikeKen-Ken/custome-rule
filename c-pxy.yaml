@@ -1,3 +1,4 @@
 payload:
   - '+.wps.com' # 用于国际版
   - '+.wpscdn.com' # 用于国际版
+  - '+.apps.apple.com'
