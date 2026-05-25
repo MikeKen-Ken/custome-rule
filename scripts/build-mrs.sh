@@ -37,7 +37,7 @@ write_stripped_file() {
 }
 
 mkdir -p "$PUBLISH"
-# 若单独运行本脚本则清空 publish；由 CI 串联 build-skk 时保留已有产物
+# 若单独运行本脚本则清空 publish
 if [[ "${BUILD_MRS_CLEAN_PUBLISH:-1}" == "1" ]]; then
   rm -rf "${PUBLISH:?}"/*
 fi

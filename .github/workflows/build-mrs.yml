@@ -38,11 +38,10 @@ jobs:
           chmod +x ./mihomo
           ./mihomo -v || true
 
-      - name: Build .mrs from c-*.yaml and Sukka skk-* rules
+      - name: Build .mrs from c-*.yaml
         run: |
           export BUILD_MRS_CLEAN_PUBLISH=1
           bash scripts/build-mrs.sh
-          bash scripts/build-skk.sh
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
