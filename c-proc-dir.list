@@ -15,6 +15,7 @@ PROCESS-NAME-WILDCARD,*Weixin*                    # 微信
 PROCESS-NAME,WeChatAppEx.exe                      # 微信小程序/内置浏览器
 PROCESS-NAME-WILDCARD,*WXWork*                    # 企业微信
 PROCESS-NAME,WeMailNode_x64.exe                   # 企业微信邮箱节点
+PROCESS-NAME,WeMail.exe                           # 企业微信邮箱
 PROCESS-NAME-WILDCARD,*WXDrive*                      # 企业微信微盘
 
 # ── 社交 / 资讯 / 内容 ────────────────────────────────────
