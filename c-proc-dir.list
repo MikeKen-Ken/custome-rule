@@ -153,3 +153,4 @@ PROCESS-NAME,com.android.messaging                # 短信（部分 HyperOS）
 PROCESS-NAME,com.android.calendar                 # 日历
 PROCESS-NAME,com.android.thememanager             # 主题
 PROCESS-NAME,com.android.updater                  # 系统更新
+PROCESS-NAME,com.android.systemui                 # 系统 UI
