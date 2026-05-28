@@ -18,6 +18,7 @@ PROCESS-NAME,WeMailNode_x64.exe                   # 企业微信邮箱节点
 PROCESS-NAME,WeMail.exe                           # 企业微信邮箱
 PROCESS-NAME-WILDCARD,*WXDrive*                      # 企业微信微盘
 PROCESS-NAME,Flydigi Space Station.exe             # Flydigi Space Station
+PROCESS-NAME,aha_doctor.exe                       # aha_doctor
 
 # ── 社交 / 资讯 / 内容 ────────────────────────────────────
 PROCESS-NAME-WILDCARD,com.tencent.*               # 腾讯系：微信、QQ、TIM、企微、腾讯会议、QQ音乐/视频、地图、新闻、文档、微信输入法、渠道游戏等
