@@ -136,6 +136,7 @@ PROCESS-NAME-WILDCARD,com.huawei.*                # 华为运动健康等
 PROCESS-NAME-WILDCARD,com.mi.*                    # 小米运动健康等（com.mi.health，非 miui 前缀）
 PROCESS-NAME-WILDCARD,com.miHoYo.*               # 原神、星穹铁道等
 PROCESS-NAME-WILDCARD,com.happyelements.*         # 开心消消乐等
+PROCESS-NAME-WILDCARD,com.dreame.*                # 追觅
 
 # ── 小米 / HyperOS（小米手机建议保留）──────────────────────
 # 说明：勿对 com.android.* 做通配，易误伤 Google 等系统组件
