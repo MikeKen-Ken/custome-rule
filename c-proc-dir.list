@@ -19,7 +19,6 @@ PROCESS-NAME,WeMail.exe                           # 企业微信邮箱
 PROCESS-NAME-WILDCARD,*WXDrive*                      # 企业微信微盘
 PROCESS-NAME,Flydigi Space Station.exe             # Flydigi Space Station
 PROCESS-NAME,aha_doctor.exe                       # aha_doctor
-PROCESS-NAME,localsend_app.exe                    # LocalSend
 
 # ── 社交 / 资讯 / 内容 ────────────────────────────────────
 PROCESS-NAME-WILDCARD,com.tencent.*               # 腾讯系：微信、QQ、TIM、企微、腾讯会议、QQ音乐/视频、地图、新闻、文档、微信输入法、渠道游戏等
@@ -125,7 +124,6 @@ PROCESS-NAME,com.furyform.floatingclock           # Floating Clock
 PROCESS-NAME,kallossoft.videotophoto              # Video To Photo
 PROCESS-NAME,com.sdhs.easy.high.road              # e 高速
 PROCESS-NAME,com.ace.ex.file.manager              # EX 文件浏览器
-PROCESS-NAME,org.localsend.localsend_app          # LocalSend
 PROCESS-NAME,com.max.xiaoheihe                    # 小黑盒
 PROCESS-NAME,com.mt.mtxx.mtxx                     # 美图秀秀
 PROCESS-NAME,com.lolaage.tbulu.tools              # 两步路户外助手
