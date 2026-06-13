@@ -5,3 +5,4 @@
 
 PROCESS-NAME,FontCreator.exe                 # 字体设计软件 FontCreator
 PROCESS-NAME,AdobeGcClient.exe               # Adobe 正版验证服务（反盗版检测）
+PROCESS-NAME,CocosDashboard.exe               # Adobe 正版验证服务（反盗版检测）
