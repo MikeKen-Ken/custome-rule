@@ -2,5 +2,3 @@
 # Android：填应用包名
 # Windows：填进程名或 .exe
 # 规则格式：PROCESS-NAME,<名称>
-PROCESS-NAME-WILDCARD,*wps*                       # wps
-PROCESS-NAME,promecefpluginhost.exe               # wps
