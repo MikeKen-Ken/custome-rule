@@ -5,6 +5,11 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"
 
+# 每次构建前从 DustinWin games/games-cn 同步 Steam 域名到 c-real-ip.*
+if [[ "${SKIP_SYNC_C_REAL_IP:-0}" != "1" ]]; then
+  bash "$(dirname "$0")/sync-c-real-ip.sh"
+fi
+
 MIHOMO="${MIHOMO:-./mihomo}"
 PUBLISH="${PUBLISH:-./publish}"
 
@@ -47,6 +52,8 @@ _plus_domain_re='^[[:space:]]*-[[:space:]]*["'\'']?\+\.'
 
 shopt -s nullglob
 for src in c-*.yaml; do
+  # 补丁模板，仅由 sync-c-real-ip.sh 读取，不参与单独编译
+  [[ "$src" == *.extra.yaml ]] && continue
   base="${src%.yaml}"
   mrs="${PUBLISH}/${base}.mrs"
   publish_yaml="${PUBLISH}/${src}"
@@ -82,5 +89,15 @@ for src in c-proc-*.list; do
   done <"${PUBLISH}/${src}"
   echo "copied: $src ($count rules)"
 done
+
+if [[ -f c-real-ip-kw.list ]]; then
+  write_stripped_file c-real-ip-kw.list "${PUBLISH}/c-real-ip-kw.list"
+  kw_count=0
+  while IFS= read -r line; do
+    [[ "$line" =~ ^[[:space:]]*DOMAIN(-SUFFIX|-KEYWORD|-REGEX)?, ]] || continue
+    kw_count=$((kw_count + 1))
+  done <"${PUBLISH}/c-real-ip-kw.list"
+  echo "copied: c-real-ip-kw.list ($kw_count rules)"
+fi
 
 echo "done. artifacts in $PUBLISH"

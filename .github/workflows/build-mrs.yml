@@ -1,18 +1,17 @@
 name: Build MRS rule-sets
 
 on:
-  # 推送到 main 且改动匹配下列路径时自动运行
   push:
     branches:
       - main
     paths:
       - "c-*.yaml"
+      - "c-real-ip.extra.yaml"
+      - "c-real-ip-kw.base.list"
       - "c-proc-*.list"
       - "scripts/**"
       - ".github/workflows/build-mrs.yml"
-  # 在 GitHub Actions 页可手动点 Run workflow
   workflow_dispatch:
-  # 每天 UTC 22:30 构建（北京时间次日 06:30）
   schedule:
     - cron: "30 22 * * *"
 
@@ -38,9 +37,13 @@ jobs:
           chmod +x ./mihomo
           ./mihomo -v || true
 
+      - name: Sync c-real-ip from DustinWin games
+        run: bash scripts/sync-c-real-ip.sh
+
       - name: Build .mrs from c-*.yaml
         run: |
           export BUILD_MRS_CLEAN_PUBLISH=1
+          export SKIP_SYNC_C_REAL_IP=1
           bash scripts/build-mrs.sh
 
       - name: Create GitHub Release

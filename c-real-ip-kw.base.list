@@ -1,0 +1,2 @@
+# fake-ip-filter 补充：子域名模式不固定、无法写成 +. 后缀的规则
+DOMAIN-KEYWORD,steamcloud

@@ -1,0 +1,4 @@
+# 手写补丁：DustinWin games / games-cn 中不含、但 fake-ip 下须 real-ip 的条目
+# 构建时由 scripts/sync-c-real-ip.sh 与上游 Steam 过滤结果合并进 c-real-ip.yaml
+payload:
+  - '+.storage.googleapis.com'        # steamcloud-*.storage.googleapis.com 云存档 PUT
