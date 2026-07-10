@@ -10,6 +10,11 @@ if [[ "${SKIP_SYNC_C_REAL_IP:-0}" != "1" ]]; then
   bash "$(dirname "$0")/sync-c-real-ip.sh"
 fi
 
+# 每次构建前从 Sukka 同步 download 规则到 c-download.*
+if [[ "${SKIP_SYNC_SUKKA_DOWNLOAD:-0}" != "1" ]]; then
+  bash "$(dirname "$0")/sync-sukka-download.sh"
+fi
+
 MIHOMO="${MIHOMO:-./mihomo}"
 PUBLISH="${PUBLISH:-./publish}"
 
@@ -90,14 +95,15 @@ for src in c-proc-*.list; do
   echo "copied: $src ($count rules)"
 done
 
-if [[ -f c-real-ip-kw.list ]]; then
-  write_stripped_file c-real-ip-kw.list "${PUBLISH}/c-real-ip-kw.list"
+for kw_src in c-real-ip-kw.list c-download-kw.list; do
+  [[ -f "$kw_src" ]] || continue
+  write_stripped_file "$kw_src" "${PUBLISH}/${kw_src}"
   kw_count=0
   while IFS= read -r line; do
-    [[ "$line" =~ ^[[:space:]]*DOMAIN(-SUFFIX|-KEYWORD|-REGEX)?, ]] || continue
+    [[ "$line" =~ ^[[:space:]]*DOMAIN(-SUFFIX|-KEYWORD|-REGEX|-WILDCARD)?, ]] || continue
     kw_count=$((kw_count + 1))
-  done <"${PUBLISH}/c-real-ip-kw.list"
-  echo "copied: c-real-ip-kw.list ($kw_count rules)"
-fi
+  done <"${PUBLISH}/${kw_src}"
+  echo "copied: $kw_src ($kw_count rules)"
+done
 
 echo "done. artifacts in $PUBLISH"
