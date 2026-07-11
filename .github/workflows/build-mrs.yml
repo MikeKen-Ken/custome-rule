@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - "c-*.yaml"
+      - "games-cn.extra.yaml"
       - "c-real-ip.extra.yaml"
       - "c-real-ip-kw.base.list"
       - "c-proc-*.list"
@@ -37,6 +38,9 @@ jobs:
           chmod +x ./mihomo
           ./mihomo -v || true
 
+      - name: Sync games-cn from DustinWin
+        run: bash scripts/sync-games-cn.sh
+
       - name: Sync c-real-ip from DustinWin games
         run: bash scripts/sync-c-real-ip.sh
 
@@ -46,6 +50,7 @@ jobs:
       - name: Build .mrs from c-*.yaml
         run: |
           export BUILD_MRS_CLEAN_PUBLISH=1
+          export SKIP_SYNC_GAMES_CN=1
           export SKIP_SYNC_C_REAL_IP=1
           export SKIP_SYNC_SUKKA_DOWNLOAD=1
           bash scripts/build-mrs.sh

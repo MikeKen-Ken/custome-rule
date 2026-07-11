@@ -1,0 +1,4 @@
+# 手写补丁：DustinWin games-cn 中不含、但须直连的国内游戏相关域名
+# 构建时由 scripts/sync-games-cn.sh 与上游合并进 games-cn.yaml
+payload:
+  - '+.steamcdn-a.akamaihd.net'   # Steam CDN（Akamai 国内节点）

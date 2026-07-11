@@ -5,6 +5,11 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"
 
+# 每次构建前从 DustinWin games-cn 合并补丁生成 games-cn.yaml
+if [[ "${SKIP_SYNC_GAMES_CN:-0}" != "1" ]]; then
+  bash "$(dirname "$0")/sync-games-cn.sh"
+fi
+
 # 每次构建前从 DustinWin games/games-cn 同步 Steam 域名到 c-real-ip.*
 if [[ "${SKIP_SYNC_C_REAL_IP:-0}" != "1" ]]; then
   bash "$(dirname "$0")/sync-c-real-ip.sh"
@@ -56,9 +61,10 @@ fi
 _plus_domain_re='^[[:space:]]*-[[:space:]]*["'\'']?\+\.'
 
 shopt -s nullglob
-for src in c-*.yaml; do
-  # 补丁模板，仅由 sync-c-real-ip.sh 读取，不参与单独编译
+for src in c-*.yaml games-cn.yaml; do
+  # 补丁模板，仅由 sync 脚本读取，不参与单独编译
   [[ "$src" == *.extra.yaml ]] && continue
+  [[ ! -f "$src" ]] && continue
   base="${src%.yaml}"
   mrs="${PUBLISH}/${base}.mrs"
   publish_yaml="${PUBLISH}/${src}"

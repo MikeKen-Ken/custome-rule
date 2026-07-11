@@ -2,3 +2,4 @@
 # 构建时由 scripts/sync-c-real-ip.sh 与上游 Steam 过滤结果合并进 c-real-ip.yaml
 payload:
   - '+.storage.googleapis.com'        # steamcloud-*.storage.googleapis.com 云存档 PUT
+  - '+.steamcdn-a.akamaihd.net'       # Steam CDN（Akamai）；上游 games 已有，显式保留
