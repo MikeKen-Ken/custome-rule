@@ -1,0 +1,6 @@
+# 按进程名走「🚫 🇭🇰」（RULE-SET c-proc-nohk → NO_HK）
+# Android：填应用包名
+# Windows：填进程名或 .exe
+# 规则格式：PROCESS-NAME,<名称>
+
+PROCESS-NAME,ChatGPT.exe                      # ChatGPT 桌面端
