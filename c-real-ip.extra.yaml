@@ -3,3 +3,7 @@
 payload:
   - '+.storage.googleapis.com'        # steamcloud-*.storage.googleapis.com 云存档 PUT
   - '+.steamcdn-a.akamaihd.net'       # Steam CDN（Akamai）；上游 games 已有，显式保留
+  # 百度网盘：控制面 / PCS 传文件（来自官方开放平台与 BaiduPCS-Go / AList 等客户端实现）
+  - '+.pan.baidu.com'                 # 网盘 Web/API（含 update.pan.baidu.com）
+  - '+.pcs.baidu.com'                 # 上传/下载主通道：pcs / c~c5 / d.pcs，及 locateupload 动态节点（如 xafj-ct11.pcs.baidu.com）
+  - '+.baidupcs.com'                  # 部分直链/旧 PCS CDN 后缀（若仍出现）
