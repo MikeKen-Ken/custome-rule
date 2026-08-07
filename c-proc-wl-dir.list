@@ -1,0 +1,8 @@
+# 进程白名单直连（高优先级，RULE-SET c-proc-wl-dir → DIRECT）
+#
+# Android：填包名，与 Clash 连接日志里的 process 一致
+# Windows：填进程名或 .exe
+# PROCESS-NAME：精确匹配
+# PROCESS-NAME-WILDCARD：通配（* 任意长度，? 单字符），大小写不敏感
+
+# ── Windows（PC 端 Clash 时生效）────────────────────────────
