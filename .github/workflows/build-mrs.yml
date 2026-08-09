@@ -44,11 +44,15 @@ jobs:
       - name: Sync c-real-ip from DustinWin games
         run: bash scripts/sync-c-real-ip.sh
 
+      - name: Sync c-download from Sukka
+        run: bash scripts/sync-sukka-download.sh
+
       - name: Build .mrs from c-*.yaml
         run: |
           export BUILD_MRS_CLEAN_PUBLISH=1
           export SKIP_SYNC_GAMES_CN=1
           export SKIP_SYNC_C_REAL_IP=1
+          export SKIP_SYNC_SUKKA_DOWNLOAD=1
           bash scripts/build-mrs.sh
 
       - name: Create GitHub Release
