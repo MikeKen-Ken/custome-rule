@@ -1,0 +1,22 @@
+payload:
+  - '+.multiplay.cn'
+  - '+.unity.cn'
+  - '+.unity.com'
+  - '+.unity3d.com'
+  - '+.unity3dusercontent.com'
+  - '+.unitychina.cn'
+  - '+.unityedu.cn'
+  - '+.unityedu.com'
+  - '+.unityedu.com.cn'
+
+  - '+.google.com'
+  - '+.googleapis.cn'
+  - '+.gstatic.com'
+  - '+.googleusercontent.com'
+  - '+.gemini.gstatic.com'
+
+  # WorkBuddy AI（国际版 app.asar 内 endpoint = www.workbuddy.ai，isOversea=true）
+  - '+.workbuddy.ai'
+  - '+.codebuddy.ai'
+  - '+.workbuddy.cc'
+  - '+.workbuddy.link'
