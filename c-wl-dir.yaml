@@ -6,5 +6,7 @@ payload:
   - '+.msftncsi.com'                   # 微软 Windows 网络状态指示器（NCSI）
   - '+.mikeken.online'                 # 本人主页
   - '+.hnhxzkj.com'                    # 花仙子科技
+  - '+.hxz999.com'                     # 花仙子 999（含 games/gamet/hxzgame.vip 等子域）
+  - '+.hxzgame.com'                    # 花仙子 Game
   - '+.volceapplog.com'                # 字节跳动火山引擎日志上报
   - '+.snssdk.com'                     # 字节跳动（抖音/今日头条等）核心内容分发
