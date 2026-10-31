@@ -14,3 +14,9 @@ payload:
   - '+.gstatic.com'                    # 谷歌
   - '+.googleusercontent.com'          # 谷歌
   - '+.gemini.gstatic.com'             # gemini
+
+  # WorkBuddy AI（国际版 app.asar 内 endpoint = www.workbuddy.ai，isOversea=true）
+  - '+.workbuddy.ai'                   # 国际版官网 + API（www / staging，IP 在新加坡）
+  - '+.codebuddy.ai'                   # 国际版账号/订阅/下载/插件 CDN（www、api、download、openplatform-cdn）
+  - '+.workbuddy.cc'                   # 国际版备用域名（staging / test1 / test2，同一台新加坡入口）
+  - '+.workbuddy.link'                 # 产物分享链接（workbuddy.link/p/xxx）

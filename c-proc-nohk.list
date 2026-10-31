@@ -4,3 +4,4 @@
 # 规则格式：PROCESS-NAME,<名称>
 
 PROCESS-NAME,ChatGPT.exe                      # ChatGPT 桌面端
+PROCESS-NAME,WorkBuddyAI.exe                  # WorkBuddy AI
