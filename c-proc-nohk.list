@@ -5,3 +5,4 @@
 
 PROCESS-NAME,ChatGPT.exe                      # ChatGPT 桌面端
 PROCESS-NAME,WorkBuddyAI.exe                  # WorkBuddy AI
+PROCESS-NAME,DeepSeek Harness.exe             # DeepSeek Harness 桌面端；安装目录里的 dsh.cmd 也启动这个 exe

@@ -20,3 +20,8 @@ payload:
   - '+.codebuddy.ai'                   # 国际版账号/订阅/下载/插件 CDN（www、api、download、openplatform-cdn）
   - '+.workbuddy.cc'                   # 国际版备用域名（staging / test1 / test2，同一台新加坡入口）
   - '+.workbuddy.link'                 # 产物分享链接（workbuddy.link/p/xxx）
+
+  # DeepSeek / DeepSeek Harness（+.deepseek.com 覆盖 chat、api、platform、api-docs、download、download-test）
+  - '+.deepseek.com'                   # 官网、对话、API、平台、文档、桌面端下载与更新
+  - '+.deepseek.cn'                    # 深度求索国内域名
+  - '+.deepseeksvc.com'                # DeepSeek 服务域名（v2fly geosite deepseek）
