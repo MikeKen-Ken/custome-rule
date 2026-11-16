@@ -1,0 +1,15 @@
+# 按进程走 Google 组（RULE-SET c-proc-google → Google，仅日本节点）
+# 只收「流量几乎全是 Google」的进程；浏览器（Chrome 等）勿加，否则所有网页都会走日本节点
+# 域名已由 MetaCubeX geosite:google 覆盖，这里兜底 IP 直连、QUIC、非 Google 域名的 CDN
+# Android：填包名；Windows：填进程名或 .exe
+# PROCESS-NAME-WILDCARD：通配（* 任意长度），大小写不敏感
+# PROCESS-PATH-REGEX：按完整路径匹配，用于进程名过于通用的情况
+
+# ── Android ────────────────────────────────────────────────
+PROCESS-NAME-WILDCARD,com.google.android.*    # Google 全家：YouTube / Gemini / Google App / GMS / Drive / Gmail / Maps / NotebookLM 等
+PROCESS-NAME,com.android.vending              # Google Play 商店（包名不在 com.google.* 下）
+
+# ── Windows ────────────────────────────────────────────────
+PROCESS-NAME,Antigravity.exe                  # Antigravity IDE 主进程
+PROCESS-PATH-REGEX,(?i)\\antigravity\\resources\\bin\\language_server   # Antigravity 语言服务（进程名 language_server 太通用，按路径限定）
+PROCESS-NAME,GoogleDriveFS.exe                # Google Drive 桌面端
