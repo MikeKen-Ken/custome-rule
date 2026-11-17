@@ -1,4 +1,4 @@
-# 按进程走 Google 组（RULE-SET c-proc-google → Google，仅日本节点）
+# 按进程走 JP 组（RULE-SET c-proc-google → JP，仅日本节点）
 # 只收「流量几乎全是 Google」的进程；浏览器（Chrome 等）勿加，否则所有网页都会走日本节点
 # 域名已由 MetaCubeX geosite:google 覆盖，这里兜底 IP 直连、QUIC、非 Google 域名的 CDN
 # Android：填包名；Windows：填进程名或 .exe

@@ -9,7 +9,7 @@ payload:
   - '+.unityedu.com'                   # Unity
   - '+.unityedu.com.cn'                # Unity
 
-  # Google 系（Google / YouTube / Gemini / Drive）已移至独立 Google 组，见 config/custom-clash-script.js
+  # Google 系（Google / YouTube / Gemini / Drive）已移至独立 JP 组（仅日本节点），见 config/custom-clash-script.js
 
   # WorkBuddy AI（国际版 app.asar 内 endpoint = www.workbuddy.ai，isOversea=true）
   - '+.workbuddy.ai'                   # 国际版官网 + API（www / staging，IP 在新加坡）

@@ -1,4 +1,4 @@
-# 按进程名走「🚫 🇭🇰」（RULE-SET c-proc-nohk → NO_HK）
+# 按进程名走「JP」（仅日本节点；RULE-SET c-proc-jp → JP）
 # Android：填应用包名
 # Windows：填进程名或 .exe
 # 规则格式：PROCESS-NAME,<名称>
